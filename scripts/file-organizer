@@ -16,3 +16,10 @@ fi
 # Hint: use `mkdir -p` and `mv`.
 
 echo "Organization complete!"
+
+mkdir -p "$DIR/Images"
+mv "$DIR"/*.jpg "$DIR"/*.png "$DIR/Images/" 2>/dev/null
+
+
+mkdir -p "$DIR/Documents"
+mv "$DIR"/*.txt "$DIR"/*.pdf "$DIR/Documents/" 2>/dev/null
