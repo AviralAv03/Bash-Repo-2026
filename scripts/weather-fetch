@@ -9,5 +9,10 @@
 
 CITY=""
 
+if [[ -n "$1" ]]; then
+
+ CITY="$1"
+fi
+
 # Fetching from wttr.in
 curl -s "wttr.in/${CITY}?0"
